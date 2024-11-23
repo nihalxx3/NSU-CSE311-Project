@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Shadhin Bangla REMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center-container">
+        <div class="login-header">
+            <h1>Welcome Back!</h1>
+            <p>Log in to Shadhin Bangla REMS to manage your account.</p>
+        </div>
+        <div class="login-form">
+            <form action="authenticate.php" method="POST">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p class="register-text">Don’t have an account? <a href="register.html">Register here</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

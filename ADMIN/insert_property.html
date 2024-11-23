@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Insert Property Details</h2>
+        <form action="insert_property.php" method="POST">
+            <label for="propertyID">Property ID:</label>
+            <input type="number" id="propertyID" name="propertyID" required>
+
+            <label for="propertyType">Property Type:</label>
+            <input type="text" id="propertyType" name="propertyType" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="cityID">City ID:</label>
+            <input type="number" id="cityID" name="cityID" required>
+
+            <label for="userID">User ID:</label>
+            <input type="number" id="userID" name="userID" required>
+
+            <label for="builderID">Builder ID:</label>
+            <input type="number" id="builderID" name="builderID" required>
+
+            <label for="agentID">Agent ID:</label>
+            <input type="number" id="agentID" name="agentID" required>
+
+            <button type="submit">Insert Property</button>
+        </form>
+    </div>
+</body>
+</html>

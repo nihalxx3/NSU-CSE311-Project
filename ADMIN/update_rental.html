@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Rental Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Update Rental Information</h2>
+        <form action="update_rental.php" method="POST">
+            <label for="propertyID">Property ID:</label>
+            <input type="number" id="propertyID" name="propertyID" required>
+
+            <label for="rentalID">Rental ID:</label>
+            <input type="number" id="rentalID" name="rentalID" required>
+
+            <label for="agreementDate">Agreement Date:</label>
+            <input type="date" id="agreementDate" name="agreementDate" required>
+
+            <label for="rentAmount">Rent Amount:</label>
+            <input type="number" id="rentAmount" name="rentAmount" step="0.01" required>
+
+            <button type="submit">Update Rental</button>
+        </form>
+    </div>
+</body>
+</html>

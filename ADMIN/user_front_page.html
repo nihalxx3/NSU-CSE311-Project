@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img1.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+            margin: 0;
+        }
+
+        /* Dashboard container styling */
+        .dashboard-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Center text styling */
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .center-text h1 {
+            font-size: 3rem;
+            color: rgb(161, 20, 20);
+            margin: 0;
+        }
+
+        /* Column styling */
+        .column {
+            background-color: rgba(147, 69, 69, 0.8); /* Semi-transparent for readability */
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .column h3 {
+            text-align: center;
+            text-decoration: underline;
+            color: #1d4755;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design
+        @media (max-width: 768px) {
+            .dashboard-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .center-text {
+                position: static;
+                transform: none;
+                margin-bottom: 20px;
+            }
+
+            .column {
+                width: 90%;
+            }
+
+            .center-text h1 {
+                font-size: 2rem;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Left Column -->
+        <div class="column">
+            <h3>Insert Info</h3>
+            <ul>
+                <li><a href="insert_feedback.html">Insert Feedback</a></li>
+                <li><a href="insert_maintenance_request.html">Insert Maintenance Request</a></li>
+                <li><a href="insert_user.html">Insert User</a></li>
+            </ul>
+
+            <h3>Delete Info</h3>
+            <ul>
+                <li><a href="delete_feedback.html">Delete Feedback</a></li>
+                <li><a href="delete_maintenance_request.html">Delete Maintenance Request</a></li>
+                <li><a href="delete_user.html">Delete User</a></li>
+                <li><a href="search_property.html">Search Properties </a></li>
+            </ul>
+
+            <h3>Search Info</h3>
+            <ul>
+                <li><a href="search_property.html">Search Properties </a></li>
+            </ul>
+        </div>
+
+        <!-- Center Text -->
+        <div class="center-text">
+            <h1>Welcome User</h1>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <h3>Update Info</h3>
+            <ul>
+                <li><a href="update_feedback.html">Update Feedback</a></li>
+                <li><a href="update_maintenance_request.html">Update Maintenance Request</a></li>
+                <li><a href="update_user.html">Update User</a></li>
+            </ul>
+
+            <h3>View Info</h3>
+            <ul>
+                <li><a href="fetch_properties.php">View Properties</a></li>
+                <li><a href="fetch_rentals.php">View Rentals</a></li>
+                <li><a href="fetch_sales.php">View Sales</a></li>
+                <li><a href="fetch_feedback.php">View Feedback</a></li>
+                <li><a href="fetch_apartments.php">View Apartments</a></li>
+                <li><a href="fetch_buildings.php">View Buildings</a></li>
+                <li><a href="fetch_agents.php">View Agents</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>

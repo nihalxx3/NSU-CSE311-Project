@@ -1,0 +1,161 @@
+/* General body styling */
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('img1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensures the image is not tiled */
+    color: #333;
+    margin: 0;
+    min-height: 100vh; /* Minimum height allows the body to extend */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Removes default body padding */
+    box-sizing: border-box; /* Ensures consistent dimensions */
+}
+
+/* Center container styling */
+.center-container {
+    text-align: center;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.6)); /* Subtle gradient */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.5), 0 4px 15px rgba(0, 0, 0, 0.3); /* Depth */
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border */
+    background-clip: padding-box;
+    position: relative;
+}
+
+/* Login Header */
+.center-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, rgba(72, 131, 245, 1) 0%, rgba(0, 255, 0, 1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.center-container p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Logo styling */
+.logo {
+    display: block;
+    margin: 10px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Input and form styles */
+input, select, button {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #9ccc65;
+    box-shadow: 0 0 5px rgba(156, 204, 101, 0.7);
+}
+
+button {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px 20px;
+    background-color: #9ccc65;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #8ebf60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    margin-top: 20px;
+}
+
+.floating-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #9ccc65;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.floating-buttons .button:hover {
+    background-color: #8ebf60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Registration Prompt */
+.register-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-text a {
+    color: #9ccc65;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .center-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, select, button {
+        width: 95%;
+    }
+
+    .floating-buttons .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

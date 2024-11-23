@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Insert Sale Information</h2>
+        <form action="insert_sale.php" method="POST">
+            <label for="propertyID">Property ID:</label>
+            <input type="number" id="propertyID" name="propertyID" required>
+
+            <label for="salePrice">Sale Price:</label>
+            <input type="number" id="salePrice" name="salePrice" required>
+
+            <button type="submit">Insert Sale</button>
+        </form>
+    </div>
+</body>
+</html>
